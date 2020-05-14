@@ -8,8 +8,11 @@ const App = () => {
       <Button inverse>Button Two</Button>
       <Button size="small">Button Three</Button>
       <Button size="big">Button Four</Button>
-      <Button width={true} size="small" inverse loading>
+      <Button width size="small" inverse loading>
         Button Five
+      </Button>
+      <Button width inverse size="big">
+        Button Six
       </Button>
     </>
   )
