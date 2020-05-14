@@ -1,0 +1,133 @@
+$white: #fff;
+
+$blue-100: #ebf3ff;
+$blue-400: #66a3ff;
+$blue-600: #3385ff;
+$blue-700: #075fe3;
+
+$gray-100: #f3f7fb;
+$gray-200: #dfe6f1;
+$gray-300: #bfcada;
+
+.button {
+  box-shadow: 0 3px 4px rgba(9, 16, 43, 0.04);
+  border-radius: 6px;
+  color: $white;
+  background-color: $blue-600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:focus {
+    background-color: $blue-700;
+  }
+
+  &:hover {
+    background-color: $blue-400;
+  }
+
+  &:disabled {
+    color: $gray-100;
+    background-color: $gray-300;
+    cursor: initial;
+  }
+
+  &:active {
+    background-color: $blue-600;
+  }
+}
+
+.inverse {
+  color: $blue-600;
+  background-color: $white;
+  border: 1px solid $blue-600;
+
+  &:focus {
+    background-color: $blue-100;
+    border: 2px solid $blue-600;
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 2px solid $blue-600;
+  }
+
+  &:disabled {
+    color: $gray-300;
+    border: 1px solid $gray-200;
+    background-color: $white;
+  }
+
+  &:active {
+    border: 1px solid $blue-600;
+  }
+}
+
+.big {
+  height: 48px;
+  line-height: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding: 15px 54px;
+
+  &.inverse:focus,
+  &.inverse:hover {
+    padding: 14px 54px;
+  }
+
+  &.inverse:active {
+    padding: 15px 54px;
+  }
+}
+
+.normal {
+  height: 42px;
+  line-height: 17px;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.17px;
+  padding: 12px 30px;
+
+  &.inverse:focus,
+  &.inverse:hover {
+    padding: 11px 30px;
+  }
+
+  &.inverse:active {
+    padding: 12px 30px;
+  }
+}
+
+.small {
+  height: 30px;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.17px;
+  padding: 5px 20px;
+
+  &.inverse:focus,
+  &.inverse:hover {
+    padding: 4px 20px;
+  }
+
+  &.inverse:active {
+    padding: 5px 20px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.loading {
+  background-color: $blue-600;
+  padding: 0;
+  min-width: 180px;
+
+  &:disabled {
+    background-color: $blue-600;
+  }
+}
+
